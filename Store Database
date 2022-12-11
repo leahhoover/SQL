@@ -1,0 +1,26 @@
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, style TEXT, quantity INTEGER);
+
+INSERT INTO clothes VALUES (1, "shirt", 15, "casual", 8);
+INSERT INTO clothes VALUES (2, "jeans", 20, "casual", 12);
+INSERT INTO clothes VALUES (3, "skirt", 12, "dressy", 4);
+INSERT INTO clothes VALUES (4, "tank", 14, "casual", 20);
+INSERT INTO clothes VALUES (5, "sweater", 25, "dressy", 6);
+INSERT INTO clothes VALUES (6, "dress", 30, "dressy", 10);
+INSERT INTO clothes VALUES (7, "leggings", 8, "casual", 12);
+INSERT INTO clothes VALUES (8, "belt", 12, "dressy", 8);
+INSERT INTO clothes VALUES (9, "bag", 25, "dressy", 4);
+INSERT INTO clothes VALUES (10, "scarf", 12, "dressy", 16);
+INSERT INTO clothes VAlUES (11, "jacket", 40, "dressy", 10);
+INSERT INTO clothes VALUES (12, "blouse", 16, "dressy", 12);
+INSERT INTO clothes VAlUES (13, "hoodie", 14, "casual", 6);
+INSERT INTO clothes VALUES (14, "socks", 4, "casual", 30);
+Insert INTO clothes VALUES (15, "tights", 8, "dressy", 24);
+
+The ascending price of each item
+SELECT * FROM clothes ORDER BY price asc;
+
+The descending order of the quantity of each item
+SELECT * FROM clothes ORDER BY quantity desc;
+
+The style in relation to quantity
+SELECT style, quantity FROM clothes;
